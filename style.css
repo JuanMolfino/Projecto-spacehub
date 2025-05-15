@@ -1,0 +1,270 @@
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* #000000
+#222222
+#1DCD9F
+#169976 */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+/* Body style */
+main {
+    height: 70vh;
+}
+
+
+/* estilo body */
+.body {
+    background: #0222c2;
+    background: radial-gradient(circle, rgba(2, 34, 194, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    min-height: 100vh;
+    color: white;
+}
+/* estilo index */
+.bodyindx{
+        background: #0222c2;
+        background: radial-gradient(circle, rgba(2, 34, 194, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        min-height: 100vh;
+        color: white;
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 25vw 25vw 25vw 25vw;
+        grid-template-areas: 
+        "header header"
+        "intro card1"
+        "ultn card1"
+        "footer footer"
+        
+        ;
+}
+header {
+    height: 15vh;
+    grid-area: header;
+}
+
+.main_index{
+   grid-area: main;
+    display: grid;
+    
+}
+.img-index {
+    grid-area: imginx;
+    width: 100%;
+
+}
+
+.img-index img {
+    width: 100%;
+    height: 100%;
+}
+
+/* texto arriba de nav */
+.bienvenida {
+    text-align: center;
+    font-size: 40px;
+    grid-area: texto1;
+}
+
+/* Estilo nav */
+nav {
+    color: white;
+    width: 100vw;
+    height: 100%;
+    grid-area: nav;
+}
+
+
+/* links nav  */
+nav a {
+    color: white;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+.actual {
+    border-style: outset;
+}
+
+.links-nav {
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
+    gap: 5%;
+
+}
+
+.h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 400%;
+    font-weight: 400;
+}
+
+.space-hub h1 {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.card1{
+    grid-area: card1;
+    background: #0222c2;
+    background: radial-gradient(circle, rgba(2, 34, 194, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+/* texto del index */
+
+.intro {
+    font-size: large;
+    width: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: end;
+    padding: 10px;
+    word-spacing: 5px;
+    grid-area: intro;
+}
+
+/* estilo del footer */
+footer {
+    color: white;
+    height: 80px;
+    border-style: outset;
+    position: absolute bottom;
+    height: 10vh;
+    display: flex;
+    flex-wrap: nowrap;
+    grid-area: footer ;
+}
+
+/* estilo main marte */
+.main-marte {
+    font-size: large;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    word-spacing: 5px;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 5%;
+    gap: 20px;
+}
+
+.nav_marte {
+    background: #c23c02;
+    background: radial-gradient(circle, rgba(194, 60, 2, 1) 43%, rgba(18, 16, 16, 1) 100%);
+}
+
+
+.body_marte {
+    background: #c23c02;
+    background: radial-gradient(circle, rgba(194, 60, 2, 1) 43%, rgba(18, 16, 16, 1) 100%);
+}
+
+/* estilo items marte */
+.main-marte ol li strong {
+    font-size: 30px;
+    text-decoration: underline;
+
+}
+
+/* james webb */
+.webb-telescope img {
+    width: 30em;
+    height: 30em;
+    margin: 10px;
+    grid-area: web;
+
+}
+
+
+
+.galeria_webb {
+    display: flex;
+    width: 100%;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center ;
+
+}
+
+.box_galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box_galeria {
+    width: 90%;
+    max-width: 1900px;
+    gap: 10px;
+    display: grid;
+    grid-template-areas:
+        "g1 web g5"
+        "g3 g3 g5"
+        "g4 g11 g5"
+        "g2 g6 g6"
+        "g7 g7 g7"
+        "g10 g10 g8"
+        "g9 g9 g8"
+        ;
+    
+}
+
+.g1 {
+    grid-area: g1;
+}
+
+.g2 {
+    grid-area: g2;
+}
+
+.g3 {
+    grid-area: g3;
+}
+
+.g5 {
+    grid-area: g5;
+}
+
+.g6 {
+    grid-area: g6;
+}
+
+.g7 {
+    grid-area: g7;
+}
+
+.g8 {
+    grid-area: g8;
+}
+
+.g9 {
+    grid-area: g9;
+}
+
+.g10 {
+    grid-area: g10;
+}
+.g11{
+    grid-area: g11;
+}
