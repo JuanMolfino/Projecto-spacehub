@@ -16,45 +16,44 @@
 }
 
 
-
+/* media query body mobile */
+@media (max-width: 600px) {
+    body{
+        background-color: black;
+    }
+}
 
 
 /* estilo body */
 .body {
-    background: #0222c2;
     background-image:url(./imagenes/pexels-francesco-ungaro-1920x1080.jpg);
     min-height: 100vh;
     color: white;
 }
+
+
 
 /* estilo index */
 .bodyindx{
         background-image:url(./imagenes/pexels-francesco-ungaro-1920x1080.jpg);
         min-height: 100vh;
         color: white;
+        background-size: cover;
+        background-repeat: repeat ;
 }
-main {
+.logo{
+    max-width: 100%;
+    height: 20em;
+    margin: 0 auto;
+}
+.main {
     height: 70vh;
 }
-.ultimas{
-    grid-area: ultn ;
-}
+
 header {
     height: 15vh;
-    grid-area: header;
+   
 }
-.img-index {
-    grid-area: imginx;
-    width: 100%;
-
-}
-
-.img-index img {
-    width: 100%;
-    height: 100%;
-}
-
-
 /* Estilo nav */
 
 .navbar .navbar-brand{
@@ -78,6 +77,7 @@ header {
 .nav-item a:hover{
     text-decoration: underline;
     color: rgb(248, 202, 117);
+    background-color: black;
     
 }
 .dropdown-menu{
@@ -128,19 +128,28 @@ header {
     word-spacing: 5px;
     width: 50%;
     margin: 0 auto;
+    max-height: 8vh;
+}
+.texto-intro{
+    max-height: 80vh;
+}
+.boton-marte {
+    background-color: black;
     
 }
-
-/* estilo del footer */
-.footer {
+.boton-marte a{
     color: white;
-    height: 80px;
-    border-style: outset;
-    position: absolute bottom;
-    height: 10vh;
-    display: flex;
-    flex-wrap: nowrap;
-    grid-area: footer ;
+}
+/* estilo del footer */
+
+footer {
+    position: relative bottom;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+   
 }
 
 /* estilo main marte */
