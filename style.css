@@ -17,9 +17,16 @@
 
 
 /* media query body mobile */
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     body{
         background-color: black;
+    }
+    .logo{
+        max-height: 60%;
+    }
+    footer{
+        position: absolute bottom;
+        margin-top: 40em ;
     }
 }
 
@@ -128,6 +135,7 @@ header {
     word-spacing: 5px;
     width: 50%;
     margin: 0 auto;
+    margin: bottom 1em;
     max-height: 8vh;
 }
 .texto-intro{
@@ -265,10 +273,41 @@ footer {
     .box_galeria{
     width: 90%;
     display: grid;
-    grid-column: auto;
-    grid-row: auto;
+    grid-template-areas:
+        "g1"
+        "web"
+        "g2"
+        "g3"
+        "g4"
+        "g5"
+        "g6"
+        "g7"
+        "g8"
+        "g9"
+       "g10" 
+       "g11"
+        ;
+}
+/* space x estilos */
+}
+.logo-spacex{
+    max-width: 1920px;
+    max-height: 500px;
+
+}
+.logo-spacex-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-spacex1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
-
+@media only screen and (max-with:600px) {
+    .img-spacex1{
+        display: none;
+    }
 }
-
