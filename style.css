@@ -300,14 +300,21 @@ footer {
     justify-content: center;
     align-items: center;
 }
+.logo_spacex_mobile{
+    display: none;
+}
 .img-spacex1{
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
-@media only screen and (max-with:600px) {
-    .img-spacex1{
+@media only screen and (max-width: 600px) {
+    .logo_spacex_mobile{
+        display: flex;
+        max-width: 300px ;
+    }
+    .logo-spacex{
         display: none;
     }
 }
