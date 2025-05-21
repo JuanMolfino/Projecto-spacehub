@@ -318,3 +318,11 @@ footer {
         display: none;
     }
 }
+.noterminado{
+    max-width: 500px;
+}
+.noterminado_box{
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
